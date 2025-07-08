@@ -8,7 +8,7 @@ public static class UnityToastManager
         AndroidJavaClass unityPlayer = new("com.unity3d.player.UnityPlayer");
         AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
 
-        AndroidJavaClass toastClass = new("com.melonstudios.toastunity.ToastUnity");
+        AndroidJavaObject toastClass = new("com.melonstudios.toastunity.ToastUnity");
         object[] args = new object[] { currentActivity, message, duration };
         toastClass.Call("ShowToast", args);
 #endif

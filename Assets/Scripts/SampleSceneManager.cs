@@ -6,4 +6,14 @@ public class SampleSceneManager : MonoBehaviour
     {
         UnityToastManager.ShowToast("Hello from Unity!");
     }
+
+    public void ShowAlertDialog()
+    {
+        UnityAlertDialogManager.ShowAlertDialog(
+            "Alert Title",
+            "This is an alert message.",
+            false,
+            "OK"
+        );
+    }
 }
