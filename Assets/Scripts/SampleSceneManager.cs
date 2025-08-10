@@ -9,11 +9,6 @@ public class SampleSceneManager : MonoBehaviour
 
     public void ShowAlertDialog()
     {
-        UnityAlertDialogManager.ShowAlertDialog(
-            "Alert Title",
-            "This is an alert message.",
-            false,
-            "OK"
-        );
+        UnityAlertDialogManager.ShowAlertDialog("Alert Title", "This is an alert message.", false, "OK");
     }
 }
